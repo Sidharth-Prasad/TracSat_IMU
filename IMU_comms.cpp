@@ -1,5 +1,6 @@
-#include <boost_1_71_0/boost/asio/serial_port.hpp> 
+#include <boost/asio/serial_port.hpp> 
 #include <boost/asio.hpp> 
+#include <iostream>
  
 using namespace boost;
  
@@ -23,7 +24,6 @@ char read_char() {
 int main() {
     while(true)
     {
-        printf(read_char());
-        printf("\n")   
+	std::cout << read_char;
     }
 }
